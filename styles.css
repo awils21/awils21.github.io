@@ -194,6 +194,7 @@ nav a[aria-current="page"]::after {
 
 .portrait img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   border: 1px solid var(--rule);
   object-fit: cover;
