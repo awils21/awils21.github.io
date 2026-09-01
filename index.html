@@ -31,9 +31,9 @@
       </div>
     </header>
 
-    <main id="main-content">
-      <section class="profile" aria-labelledby="profile-title">
-        <figure class="portrait">
+    <main class="academic-layout" id="main-content">
+      <aside class="profile-sidebar" aria-label="Professional profile">
+        <figure class="sidebar-portrait">
           <img
             src="allen-wilson-headshot.png"
             alt="Portrait of Allen Wilson"
@@ -44,13 +44,27 @@
           >
         </figure>
 
-        <div class="profile-copy">
-          <p class="eyebrow">American Politics · Political Methodology</p>
-          <h1 id="profile-title">Allen Wilson</h1>
-          <p class="profile-role">
-            PhD Candidate (ABD), Department of Political Science<br>
+        <div class="sidebar-profile">
+          <h2>Allen Wilson</h2>
+          <p class="sidebar-role">
+            PhD Candidate (ABD)<br>
+            Department of Political Science<br>
             University of North Carolina at Chapel Hill
           </p>
+          <ul class="sidebar-links" aria-label="Contact and professional links">
+            <li><a href="mailto:awils@unc.edu">Email</a></li>
+            <li><a href="Allen_Wilson_CV.pdf">Curriculum vitae</a></li>
+            <li><a href="https://scholar.google.com/citations?user=T04XD_UAAAAJ" rel="me">Google Scholar</a></li>
+            <li><a href="https://orcid.org/0009-0005-0301-5288" rel="me">ORCID</a></li>
+            <li><a href="https://politicalscience.unc.edu/staff/allen-wilson/">UNC profile</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="content-column">
+        <section class="about-section" aria-labelledby="profile-title">
+          <p class="eyebrow">American Politics · Political Methodology</p>
+          <h1 id="profile-title">About</h1>
 
           <div class="profile-summary">
             <p>
@@ -73,20 +87,11 @@
               My work combines survey experiments with computational text analysis,
               psychometric network analysis, causal mediation, and multilevel regression
               and poststratification. Collaborative research includes an article in
-              <cite>Public Opinion Quarterly</cite>, a manuscript under review at
-              <cite>The Journal of Politics</cite>, and a Cambridge Element under contract.
+              <cite>Public Opinion Quarterly</cite>, multiple manuscripts under review,
+              and a Cambridge Element under contract.
             </p>
           </div>
-
-          <ul class="profile-links" aria-label="Contact and professional links">
-            <li><a href="mailto:awils@unc.edu">Email</a></li>
-            <li><a href="Allen_Wilson_CV.pdf">CV</a></li>
-            <li><a href="https://scholar.google.com/citations?user=T04XD_UAAAAJ" rel="me">Google Scholar</a></li>
-            <li><a href="https://orcid.org/0009-0005-0301-5288" rel="me">ORCID</a></li>
-            <li><a href="https://politicalscience.unc.edu/staff/allen-wilson/">UNC profile</a></li>
-          </ul>
-        </div>
-      </section>
+        </section>
 
       <section class="home-section" aria-labelledby="agenda-title">
         <header class="section-header">
@@ -186,6 +191,7 @@
           </p>
         </div>
       </section>
+      </div>
     </main>
 
     <footer class="site-footer">
