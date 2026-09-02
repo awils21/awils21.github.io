@@ -488,6 +488,10 @@ nav a[aria-current="page"]::after {
   padding-bottom: clamp(3rem, 5vw, 4rem);
 }
 
+.compact-intro h1 {
+  margin-bottom: 0;
+}
+
 .research-section,
 .teaching-section {
   width: min(calc(100% - 48px), var(--content-width));
@@ -718,7 +722,8 @@ nav a[aria-current="page"]::after {
 
 .experience-list article > p {
   color: var(--muted);
-  white-space: nowrap;
+  max-width: 21rem;
+  text-align: right;
 }
 
 .narrow-prose {
@@ -737,6 +742,23 @@ nav a[aria-current="page"]::after {
 .group-heading {
   margin-bottom: 1.2rem;
   font-size: 1.2rem;
+}
+
+.plain-academic-list {
+  max-width: 920px;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #3e464f;
+  font-family: var(--serif);
+}
+
+.plain-academic-list li {
+  margin-bottom: 0.7rem;
+  padding-left: 0.25rem;
+}
+
+.plain-academic-list li:last-child {
+  margin-bottom: 0;
 }
 
 .teaching-interests {
@@ -955,6 +977,11 @@ nav a[aria-current="page"]::after {
   .experience-list article {
     grid-template-columns: 1fr;
     gap: 0.25rem;
+  }
+
+  .experience-list article > p {
+    max-width: none;
+    text-align: left;
   }
 
   .site-footer {
